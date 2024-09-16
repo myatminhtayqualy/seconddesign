@@ -316,10 +316,10 @@ body {
 
 @media screen and (max-width: 605px) {
   .banner h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .banner p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .header {
@@ -333,9 +333,23 @@ body {
   .formgroup {
     padding: 0px 10px;
   }
+
+  .icontext::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -13px;
+
+    margin-right: 10px;
+  }
+
+  .nav-item li {
+    width: 92%;
+  }
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 470px) {
   .banner h2 {
     font-size: 20px;
   }
