@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* ===============================
+Top Page
+=============================== */
+:root {
+  --text-color: #5b5b5b;
+  --bold-color: #242424;
+  --btn-color: #4468e2;
+  --border-color: #b4c6ee;
+  --menu-icon-color: #003c6a;
+  --nav-color: #eaeaea;
+}
+
+body {
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background: url("../img/bg/mv-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  max-width: 1280px;
+  padding: 20px;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-item li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.nav-item li a {
+  width: calc((100% - 320px) / 5);
+  height: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-item li a:hover {
+  color: var(--bold-color);
+}
+
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logotext {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.logocontainer img {
+  width: 27px;
+  height: 27px;
+}
+
+.bannertitle {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Noto Sans";
+  color: #fff;
+  margin-top: 170px;
+  margin-bottom: 5px;
+}
+
+.banner p {
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.formcontainer {
+  max-width: 876px;
+  height: 94px;
+  padding: 0px 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(106, 187, 209, 1) 90%
+  );
+
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.textcontainer {
+  width: 50%;
+  max-width: 522px;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 20px;
+}
+
+.icongroup {
+  padding-left: 0;
+}
+
+.header {
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  font-family: "Noto Sans";
+  font-weight: 300;
+
+  margin-top: 10px;
+}
+
+.explorebtn {
+  width: 187px;
+  height: 63px;
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  line-height: 63px;
+  color: #fff;
+  font-family: "Noto Serif", serif;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 15px 24px;
+  text-decoration: none;
+}
+
+.bordergroup {
+  border: 1px solid var(--border-color);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.icontext {
+  position: relative;
+}
+
+.icontext::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -20px;
+
+  background: url("../img/icon/search.png") no-repeat center center;
+  background-size: contain;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1027px) {
+  .textcontainer {
+    width: 70%;
+    max-width: 876px;
+  }
+
+  .banner p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 52px;
+    padding: 10px;
+  }
+
+  .banner h2 {
+    font-size: 46px;
+    margin-top: 100px;
+  }
+
+  .textcontainer {
+    width: 90%;
+    max-width: 654px;
+  }
+
+  .banner p {
+    font-size: 25px;
+  }
+
+  .formcontainer {
+    width: 90%;
+    max-width: 654px;
+    height: 90px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin: 30px auto;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px 18px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menuicon {
+    background-color: var(--menu-icon-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuicon img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .menuitems {
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 62px;
+    left: 0%;
+    overflow-y: scroll;
+    display: none;
+  }
+
+  .nav-item li {
+    width: 97%;
+  }
+
+  .nav-item li a {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .nav-item a::before {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+
+    left: 95%;
+  }
+
+  .menuitems.show {
+    display: block;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .banner h2 {
+    font-size: 20px;
+  }
+  .banner p {
+    font-size: 18px;
+  }
+
+  .header {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .formgroup {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .banner h2 {
+    font-size: 20px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 11px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .formcontainer {
+    height: 70px;
+  }
+  .formgroup {
+    padding: 0px 10px;
+  }
+
+  .icontext::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -13px;
+
+    margin-right: 10px;
+  }
+
+  .nav-item li {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    font-size: 9px;
+  }
+
+  .text {
+    font-size: 8px;
+  }
+
+  .banner h2 {
+    font-size: 23px;
+    margin-top: 90px;
+  }
+
+  .banner p {
+    font-size: 11px;
+  }
+
+  .nav-item a::before {
+    left: 90%;
+  }
+
+  .textcontainer {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .textcontainer p {
+    text-wrap: wrap;
+  }
+
+  .formcontainer {
+    width: 90%;
+    max-width: 654px;
+    height: 45px;
+    padding: 0px 10px;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .icontext::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -13px;
+
+    margin-right: 10px;
+  }
+
+  .formgroup {
+    padding: 0px 10px;
+  }
+
+  .menuicon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .menuicon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .explorebtn {
+    width: 150px;
+    height: 35px;
+    padding: 12px 40px;
+    font-size: 11px;
+  }
+}
