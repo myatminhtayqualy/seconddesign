@@ -215,6 +215,7 @@ body {
   .navbar {
     height: 52px;
     padding: 10px;
+    background-color: var(--nav-color);
   }
 
   .banner h2 {
@@ -278,7 +279,7 @@ body {
 
   .menuitems {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-color: white;
     position: absolute;
     top: 62px;
