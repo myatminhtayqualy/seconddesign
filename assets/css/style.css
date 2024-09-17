@@ -145,6 +145,13 @@ body {
   margin: 10px auto;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 50px;
+}
+
 .textcontainer {
   width: 50%;
   max-width: 522px;
@@ -156,7 +163,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 0px 50px;
+  padding: 0px 30px;
 }
 
 .icongroup {
@@ -262,6 +269,16 @@ body {
     margin: 30px auto;
   }
 
+  .wrapper {
+    margin-right: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .formgroup {
+    padding: 0px 18px;
+  }
+
   .header {
     font-size: 20px;
   }
@@ -310,7 +327,7 @@ body {
   }
 
   .nav-item li {
-    width: 97%;
+    width: 95%;
   }
 
   .nav-item li a {
@@ -352,6 +369,10 @@ body {
     font-size: 12px;
   }
 
+  .wrapper {
+    width: 100%;
+  }
+
   .formgroup {
     padding: 0px 10px;
   }
@@ -367,7 +388,7 @@ body {
   }
 
   .nav-item li {
-    width: 95%;
+    width: 93%;
   }
 }
 
@@ -405,7 +426,7 @@ body {
   }
 
   .nav-item li {
-    width: 95%;
+    width: 90%;
   }
 }
 
